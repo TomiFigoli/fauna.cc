@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+  }
+  header {
+    height: 40px;
+  }
+  header .navbar {
+    background-color: #2C0735 !important;
+  }
+  header .navbar .navbar-brand {
+    color: #fffffc;
+    font-size: 15px;
+  }
+  header .navbar .navbar-toggler {
+    color: #fffffc;
+  }
+  header img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  main {
+    margin-top: 50px;
+    background-color: #fffffc;
+    overflow-x: hidden;
+  }
+  main .titulo {
+    display: flex;
+    justify-content: center;
+  }
+  main .titulo .titulo_principal {
+    grid-area: titulo;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #000000;
+  }
+  main .comienzo_index {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+  }
+  main .comienzo_index .parrafo1_index {
+    width: 100%;
+  }
+  main .comienzo_index .imagenes_index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen1" "none" "none" "imagen2";
+  }
+  main .comienzo_index .imagenes_index img {
+    width: 200px;
+    height: 220px;
+  }
+  main .comienzo_index .imagenes_index .imagen1 {
+    grid-area: imagen1;
+  }
+  main .comienzo_index .imagenes_index .imagen2 {
+    grid-area: imagen2;
+    margin-left: 200px;
+  }
+  main .comienzo_index .parrafo2_index {
+    width: 100%;
+    margin-top: 10px;
+  }
+  main .actividades img {
+    width: 100px;
+    height: 120px;
+  }
+  main .fechas img {
+    width: 100px;
+    height: 120px;
+  }
+  footer {
+    background-color: #2C0735;
+    color: #fffffc;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=app.css.map */

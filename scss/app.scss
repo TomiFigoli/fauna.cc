@@ -1,0 +1,59 @@
+@media (max-width: 768px){
+*{margin: 0;}
+$primary-color: #2C0735;
+$secondary-color: #fffffc;
+$terciary-color: #000000;
+header{height: 40px;
+    .navbar{background-color: $primary-color !important;
+    .navbar-brand{color: $secondary-color;
+                    font-size: 15px;}
+    .navbar-toggler{color: $secondary-color;}}
+    img{border-radius: 50%;
+    height: 60px;
+width: 60px;}
+}
+
+// estilo index
+main{margin-top: 50px;
+    background-color: $secondary-color;
+    overflow-x: hidden;
+    .titulo{display: flex;
+        justify-content: center;
+    .titulo_principal{grid-area: titulo;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: $terciary-color;}}
+    .comienzo_index{
+        display: flex;
+        flex-direction: column;
+        color: $terciary-color;
+            .parrafo1_index{width: 100%;}
+            .imagenes_index{display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-areas: "imagen1" "none"
+                                                "none" "imagen2";
+                                                img{width: 200px;
+                                                    height: 220px;}
+                                                .imagen1{grid-area: imagen1;}
+                                                .imagen2{grid-area: imagen2;
+                                                margin-left: 200px;}}
+            .parrafo2_index{width: 100%;
+                            margin-top: 10px;}
+            
+            
+    }
+    .actividades{
+        img{width: 100px;
+            height: 120px;}
+    }
+    .fechas{
+        img{width: 100px;
+            height: 120px;}
+    }
+}
+
+footer{background-color: $primary-color;
+        color: $secondary-color;
+        margin-top: 10px;}
+}
+
