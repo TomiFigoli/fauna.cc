@@ -71,6 +71,38 @@
     width: 100px;
     height: 120px;
   }
+  .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos .feminismo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo_fem" "titulo_fem" "imagen_fem" "parrafo_fem";
+  }
+  .datos .feminismo img {
+    width: 200px;
+    height: 220px;
+    grid-area: "imagen_fem";
+    margin-top: 20px;
+  }
+  .datos .feminismo p {
+    grid-area: "parrafo_fem";
+  }
+  .datos .nunca_mas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo_nunca" "titulo_nunca" "imagen_nunca" "parrafo_nunca";
+  }
+  .datos .nunca_mas img {
+    width: 200px;
+    height: 220px;
+    grid-area: "imagen_nunca";
+    margin-top: 20px;
+  }
+  .datos .nunca_mas p {
+    grid-area: "parrafo_nunca";
+  }
   footer {
     background-color: #2C0735;
     color: #fffffc;

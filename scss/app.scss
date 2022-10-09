@@ -3,6 +3,8 @@
 $primary-color: #2C0735;
 $secondary-color: #fffffc;
 $terciary-color: #000000;
+
+// estilo header
 header{height: 40px;
     .navbar{background-color: $primary-color !important;
     .navbar-brand{color: $secondary-color;
@@ -52,6 +54,31 @@ main{margin-top: 50px;
     }
 }
 
+// estilo sobre nos
+.datos{display: flex;
+        flex-direction: column;
+    .feminismo{display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "titulo_fem" "titulo_fem"
+                                    "imagen_fem" "parrafo_fem";
+                    img{width: 200px;
+                        height: 220px;
+                        grid-area: "imagen_fem";
+                    margin-top: 20px;}
+                    p{grid-area: "parrafo_fem";}
+                }
+    .nunca_mas{display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "titulo_nunca" "titulo_nunca"
+                            "imagen_nunca" "parrafo_nunca";
+            img{width: 200px;
+                height: 220px;
+                grid-area: "imagen_nunca";
+            margin-top: 20px;}
+            p{grid-area: "parrafo_nunca";}
+                }
+        }
+// estilo footer
 footer{background-color: $primary-color;
         color: $secondary-color;
         margin-top: 10px;}
