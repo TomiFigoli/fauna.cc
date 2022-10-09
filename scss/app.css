@@ -103,6 +103,24 @@
   .datos .nunca_mas p {
     grid-area: "parrafo_nunca";
   }
+  .imagen_fecha {
+    width: 200px;
+    height: 220px;
+  }
+  .actividades {
+    overflow-x: hidden;
+    margin-top: 30px;
+  }
+  .actividades h2 {
+    margin-left: 230px;
+  }
+  .actividades ul {
+    list-style: none;
+  }
+  .actividades ul img {
+    width: 300px;
+    height: 220px;
+  }
   footer {
     background-color: #2C0735;
     color: #fffffc;
