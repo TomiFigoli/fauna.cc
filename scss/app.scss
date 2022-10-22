@@ -29,18 +29,22 @@ main{margin-top: 50px;
         display: flex;
         flex-direction: column;
         color: $terciary-color;
-            .parrafo1_index{width: 100%;}
-            .imagenes_index{display: grid;
-                            grid-template-columns: 1fr 1fr;
-                            grid-template-areas: "imagen1" "none"
-                                                "none" "imagen2";
-                                                img{width: 200px;
-                                                    height: 220px;}
-                                                .imagen1{grid-area: imagen1;}
-                                                .imagen2{grid-area: imagen2;
-                                                margin-left: 200px;}}
-            .parrafo2_index{width: 100%;
+        width: 100%;
+        .index1{display: flex;
+            flex-direction: row;
+            width: 100%;
+            .parrafo1_index{width: 50%;}
+            .imagen1{width: 200px;
+                height: 220px;}
+        }
+        .index2{display: flex;
+            flex-direction: row;
+            width: 100%;
+            .parrafo2_index{width: 50%;
                             margin-top: 10px;}
+            .imagen2{width: 200px;
+                height: 220px;}
+            }
             
             
     }
@@ -63,6 +67,7 @@ main{margin-top: 50px;
                                     "imagen_fem" "parrafo_fem";
                     img{width: 200px;
                         height: 220px;
+                        margin-top: 30px;
                         grid-area: "imagen_fem";
                     margin-top: 20px;}
                     p{grid-area: "parrafo_fem";}
@@ -73,6 +78,7 @@ main{margin-top: 50px;
                             "imagen_nunca" "parrafo_nunca";
             img{width: 200px;
                 height: 220px;
+                margin-top: 30px;
                 grid-area: "imagen_nunca";
             margin-top: 20px;}
             p{grid-area: "parrafo_nunca";}
@@ -95,3 +101,95 @@ footer{background-color: $primary-color;
         margin-top: 10px;}
 }
 
+*{margin: 0;}
+$primary-color: #2C0735;
+$secondary-color: #fffffc;
+$terciary-color: #000000;
+
+// estilo header
+header{height: 40px;
+    .navbar{background-color: $primary-color !important;
+    .navbar-brand{color: $secondary-color;
+                    font-size: 15px;}
+    .navbar-toggler{color: $secondary-color;}}
+    img{border-radius: 50%;
+    height: 60px;
+width: 60px;}}
+
+main{ overflow-x: hidden;
+.titulo{margin-top: 40px;
+        display: flex;
+        justify-content: center;
+            h1{justify-content: center;}}
+.comienzo_index{display: flex;
+    flex-direction: column;
+        .index1{display: flex;
+                flex-direction: row;
+                margin-bottom: 30px;
+                .parrafo1_index{width: 50%;
+                margin-top: 150px;}
+                .imagen1{width: 300px;
+                        height: 320px;
+                    margin-left: 300px;}}
+        .index2{display: flex;
+                flex-direction: row-reverse;
+                margin-right: 500px;
+                .parrafo2_index{margin-top: 100px;
+                margin-left: 300px;}
+                .imagen2{width: 300px;
+                            height: 320px;}}
+}
+}
+
+// sobre nosotros
+.texto_sobre_imagen{position: relative;
+                    display: inline-block;
+                text-align: center;
+            p{position: absolute;
+            top: 10px;
+            left: 10px;
+        color: #fffffc;}}
+.datos{display: flex;
+    flex-direction: column;
+.feminismo{display: flex;
+    flex-direction: column;
+                h2{margin-bottom: 50px;}
+    .fm{display: flex;
+        flex-direction: row;
+                img{width: 400px;
+                    height: 320px;
+                    margin-top: 30px;
+                    margin-left: 100px;
+                margin-top: 20px;}
+                p{margin-bottom: 300px;}
+            }}
+.nunca_mas{display: flex;
+    flex-direction: column;
+        h2{margin-bottom: 50px;}
+    .nm{display: flex;
+        flex-direction: row; 
+    img{width: 400px;
+            height: 320px;
+            margin-top: 30px;
+            margin-left: 100px;
+        margin-top: 20px;}
+        p{margin-bottom: 300px;}
+            }
+    }
+}
+       
+// estilo fechas
+.imagen_fecha{width: 300px;
+    height: 420px;}
+.actividades{overflow-x: hidden;
+margin-top: 30px;
+h2{margin-left: 230px;}
+ul{list-style: none;
+    li{margin-top: 50px;}
+img{width: 300px;
+height: 420px;
+margin-left: 100px;}}}
+
+// estilo footer
+footer{background-color: $primary-color;
+    color: $secondary-color;}
