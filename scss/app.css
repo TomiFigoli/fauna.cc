@@ -52,6 +52,7 @@
   main .comienzo_index .index1 .imagen1 {
     width: 200px;
     height: 220px;
+    margin-left: 10px;
   }
   main .comienzo_index .index2 {
     display: flex;
@@ -61,6 +62,7 @@
   main .comienzo_index .index2 .parrafo2_index {
     width: 50%;
     margin-top: 10px;
+    margin-left: 10px;
   }
   main .comienzo_index .index2 .imagen2 {
     width: 200px;
@@ -132,156 +134,151 @@
     margin-top: 10px;
   }
 }
-* {
-  margin: 0;
-}
-
-header {
-  height: 40px;
-}
-header .navbar {
-  background-color: #2C0735 !important;
-}
-header .navbar .navbar-brand {
-  color: #fffffc;
-  font-size: 15px;
-}
-header .navbar .navbar-toggler {
-  color: #fffffc;
-}
-header img {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-}
-
-main {
-  overflow-x: hidden;
-}
-main .titulo {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-main .titulo h1 {
-  justify-content: center;
-}
-main .comienzo_index {
-  display: flex;
-  flex-direction: column;
-}
-main .comienzo_index .index1 {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 30px;
-}
-main .comienzo_index .index1 .parrafo1_index {
-  width: 50%;
-  margin-top: 150px;
-}
-main .comienzo_index .index1 .imagen1 {
-  width: 300px;
-  height: 320px;
-  margin-left: 300px;
-}
-main .comienzo_index .index2 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 500px;
-}
-main .comienzo_index .index2 .parrafo2_index {
-  margin-top: 100px;
-  margin-left: 300px;
-}
-main .comienzo_index .index2 .imagen2 {
-  width: 300px;
-  height: 320px;
-}
-
-.texto_sobre_imagen {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-.texto_sobre_imagen p {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: #fffffc;
-}
-
-.datos {
-  display: flex;
-  flex-direction: column;
-}
-.datos .feminismo {
-  display: flex;
-  flex-direction: column;
-}
-.datos .feminismo h2 {
-  margin-bottom: 50px;
-}
-.datos .feminismo .fm {
-  display: flex;
-  flex-direction: row;
-}
-.datos .feminismo .fm img {
-  width: 400px;
-  height: 320px;
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-top: 20px;
-}
-.datos .feminismo .fm p {
-  margin-bottom: 300px;
-}
-.datos .nunca_mas {
-  display: flex;
-  flex-direction: column;
-}
-.datos .nunca_mas h2 {
-  margin-bottom: 50px;
-}
-.datos .nunca_mas .nm {
-  display: flex;
-  flex-direction: row;
-}
-.datos .nunca_mas .nm img {
-  width: 400px;
-  height: 320px;
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-top: 20px;
-}
-.datos .nunca_mas .nm p {
-  margin-bottom: 300px;
-}
-
-.imagen_fecha {
-  width: 300px;
-  height: 420px;
-}
-
-.actividades {
-  overflow-x: hidden;
-  margin-top: 30px;
-}
-.actividades h2 {
-  margin-left: 230px;
-}
-.actividades ul {
-  list-style: none;
-}
-.actividades ul li {
-  margin-top: 50px;
-}
-.actividades ul img {
-  width: 300px;
-  height: 420px;
-  margin-left: 100px;
-}
-
-footer {
-  background-color: #2C0735;
-  color: #fffffc;
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+  }
+  header {
+    height: 40px;
+  }
+  header .navbar {
+    background-color: #2C0735 !important;
+  }
+  header .navbar .navbar-brand {
+    color: #fffffc;
+    font-size: 15px;
+  }
+  header .navbar .navbar-toggler {
+    color: #fffffc;
+  }
+  header img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  main {
+    overflow-x: hidden;
+  }
+  main .titulo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  main .titulo h1 {
+    justify-content: center;
+  }
+  main .comienzo_index {
+    display: flex;
+    flex-direction: column;
+  }
+  main .comienzo_index .index1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  main .comienzo_index .index1 .parrafo1_index {
+    width: 50%;
+    margin-top: 150px;
+  }
+  main .comienzo_index .index1 .imagen1 {
+    width: 300px;
+    height: 320px;
+    margin-left: 300px;
+  }
+  main .comienzo_index .index2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 500px;
+  }
+  main .comienzo_index .index2 .parrafo2_index {
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  main .comienzo_index .index2 .imagen2 {
+    width: 300px;
+    height: 320px;
+  }
+  .texto_sobre_imagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .texto_sobre_imagen p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fffffc;
+  }
+  .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos .feminismo {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos .feminismo h2 {
+    margin-bottom: 50px;
+  }
+  .datos .feminismo .fm {
+    display: flex;
+    flex-direction: row;
+  }
+  .datos .feminismo .fm img {
+    width: 400px;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .datos .feminismo .fm p {
+    margin-bottom: 300px;
+  }
+  .datos .nunca_mas {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos .nunca_mas h2 {
+    margin-bottom: 50px;
+  }
+  .datos .nunca_mas .nm {
+    display: flex;
+    flex-direction: row;
+  }
+  .datos .nunca_mas .nm img {
+    width: 400px;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  .datos .nunca_mas .nm p {
+    margin-bottom: 300px;
+  }
+  .imagen_fecha {
+    width: 300px;
+    height: 420px;
+  }
+  .actividades {
+    overflow-x: hidden;
+    margin-top: 30px;
+  }
+  .actividades h2 {
+    margin-left: 230px;
+  }
+  .actividades ul {
+    list-style: none;
+  }
+  .actividades ul li {
+    margin-top: 50px;
+  }
+  .actividades ul img {
+    width: 300px;
+    height: 420px;
+    margin-left: 100px;
+  }
+  footer {
+    background-color: #2C0735;
+    color: #fffffc;
+  }
 }/*# sourceMappingURL=app.css.map */
